@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en-US">
+	<head>
+		<title>HTML Images</title>
+		<meta charset="utf-8">
+	<head>
+<body bgcolor="dodgerblue">
+	<h1>Images in HTML</h1>
+	<h2>Remote, Absolute URLs</h2>
+	<p>This is my school mascot:
+	<a href="https://www.ucmo.edu/"><img src="https://ucmathletics.com/images/logos/site/site.png"></a>Go Mules! The image appears at its original size as an inline element. This is also a link.</p>
+
+	<p>If we specify a size, we can resize the image: <img src="https://ucmathletics.com/images/logos/site/site.png" width="32" height"32">so that it is small enough to fit where we want it. This image is normally 200x206.</p>
+	<p>We use an alternate atribut for when there is a problem with the image or for screenreaders used by sision-impared visitors. Here is a missing image: <img src="goaway/missing.jpg" alt="I bet you wish there was a picture here, huh?" width="200" height="200"></p>
+
+	<h2>Local, Relative URLs</h2>
+	<p>Images should be hosted in an organized folder and stored on a server with the html files and must maintain the same relative place with each other.</p>
+	<figure>
+	<img src="images/shoe.jpg" alt="a red shoe" width="300" height="300">
+	<figcaption>This is also a red mule.</figcaption>
+	</figure>
+
+	<h2>Image Types</h2>
+	<h3>JPEG (Joint Photographical Experts Group)</h3>
+	<p>A JPEG is best for phototgraphic images and provides a compress formate that gives a small file size when faced with lots of color pixel variation.</p>
+	<img src="images/mule_retro.jpg">
+	<h3>GIF (Graphical Interchange Format)</3>
+	<p>A GIF is best for limited colors. Allows for threshold transparency and animation.</p>
+	<img src="images/attitude.gif">
+	<h3>PNG (Portable Network Graphics)</h3>
+	<p>A PNG does well with limited color and photographic content. It allows for gradient and subtle transparency.</p>
+	<img src="images/mule_transp.png">
+
+</body>
+</html>

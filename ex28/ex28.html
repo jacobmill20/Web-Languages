@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!-- JQuery Link Below, won't hurt if it isn't required -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+<meta charset="utf-8">
+<title>My Javascript Test File - Jacob Miller</title>
+<style>
+body {
+	background: grey;
+	text-align: center;
+}
+html {
+ display: flex;
+  justify-content: center;
+  align-items: center;
+  align-contents: center;
+  height: 100%;
+}
+
+/* Styles for the tilt block */
+#tilt {
+  display: block;
+  height: 200px;
+  width: 300px;
+  background-color: grey;
+  margin: 0 auto;
+  transition: box-shadow 0.1s, transform 0.1s;
+
+  /*
+    * Adding image to the background
+    * No relation to the hover effect.
+    */
+  background-image: url(http://grin3design.com/testimages/1610/test-pattern.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+#tilt:hover {
+  box-shadow: 0px 0px 30px rgba(0,0,0, 0.6);
+  cursor: pointer;
+}
+</style>
+<script>
+//Whole URL: http://grin3design.com/testimages/1610/balloon-1.jpg
+/* TESTIMAGES
+"balloon.jpg", "bird.jpg", "bug-sm.png", "cage.png", "gloom.gif", "hat-sm.png", "horse.png", "qcube.gif", "robot.gif", "robot.png", "test-pattern.jpg", "tv-frame.png"
+*/
+</script>
+</head>
+<body>
+	<h1>It floats... Try it.</h1>
+    <div id="tilt">
+	  <!--  Container for our block  -->
+	</div>
+	<script type="text/javascript" src="ex28script.js"></script>
+</body>
+</html>
+<!-- Code sources:
+Part 1:
+Trying to use Javascript array to display Random images in <div>
+answered Oct 23 '17 at 10:24. Thum Choon Tat.
+
+Mistry, J. (2019, December 2). Create a 3D hover effect using JavaScript animations & CSS in HTML.
+Retrieved December 01, 2020, from https://technokami.in/3d-hover-effect-using-javascript-animations-css-html
+-->

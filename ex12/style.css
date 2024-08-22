@@ -1,0 +1,123 @@
+body{
+	background: darkgrey;
+	font-family: helvetica, Arial, sans-serif;
+	margin: 0; padding: 0;
+	}
+#home {
+	background: url(https://img.rawpixel.com/s3fs-private/rawpixel_images/website_content/v502-adj-25-abstractbg_1.jpg?w=800&dpr=1&fit=default&crop=default&q=65&vib=3&con=3&usm=15&bg=F4F4F3&ixlib=js-2.2.1&s=1d8619e435dad3a774579101aaa770a7.jpg);
+	background-size: cover;
+	}
+#away {
+	background: url(https://www.designyourway.net/diverse/darkpat/tread.jpg);
+	background-size: 300px;
+	}
+#else {
+	background: url(https://background-tiles.com/overview/blue/patterns/large/1058.png);
+	background-size: 300px;
+	}
+#new {
+	background: url(https://background-tiles.com/overview/blue/patterns/large/1046.png);
+	background-size: 200px;
+	}
+header {
+	background: blueviolet;
+	height: 80px;
+	position: relative;
+	padding: 1px;
+	}
+#away header {
+	background: midnightblue;
+	}
+#away header h1 {
+	color: white;
+	}
+#away header h1:hover {
+	color: orange;
+	}
+#else header {
+	background: darkcyan;
+	}
+#new header {
+	background: lightgreen;
+	}
+h1 {
+	margin-left: 50px;
+	line-height: 80px;
+	margin: 0px 0px 0px 50px;
+	position: absolute; bottom: 0px;
+	}
+h1:hover {
+	color: white;
+	}
+#menu {
+	display:;
+	line-height: 80px;
+	position: absolute;
+	top: -80px;
+	right: 0px;
+	width: 125px;
+	text-align: center;
+	}
+nav {
+	position: absolute;
+	top: 0px;
+	right: 50px;
+	}
+nav ul {
+	list-style-type: none;
+	text-align: center;
+	padding: 0px; margin: 0px;
+	}
+nav li {
+	width: 125px;
+	float: left;
+	}
+nav a {
+	text-decoration: none;
+	color: white;
+	line-height: 80px;
+	letter-spacing: 0.1em;
+	display: block;
+	}
+nav a:hover {
+	background: rgba(15%, 15%, 15%, 0.5);
+	color: white;
+	}
+nav a:active {
+	background: rgba(100%, 100%, 100%, 0.5);
+	color: black;
+	}
+#home #homelink a, #away #awaylink a, #else #some-elselink a, #new #some-newlink a {
+	background: rgba(0%,0%,0%,0.5);
+	color: white;
+	text-shadow: 1px 1px black;
+	}
+/* SUB MENUS */
+nav li ul {
+	position: absolute;
+	display: none;
+	}
+nav li:hover ul {
+	display: block;
+	}
+nav li ul li {
+	border-top: 1px solid white;
+	float: none;
+	}
+nav li ul a {
+	border-width: 0;
+	border-radius: 0;
+	line-height: 40px;
+	}
+	
+/* Triggers when viewport is smaller size */
+@media screen and (max-width:860px){
+	#menu {display: block;}
+	#menu-hide ul {display: none;}
+	#menu-hide:hover ul {display: block;}
+	nav {top: 80px; right: 0px;}
+	nav li {width: 100vw; float: none;}
+	nav a {line-height: 50px;}
+	h1 {font-size: 5vw;}
+	nav li ul li {float: left; width: 50vw; border-top: 1px solid white;}
+}

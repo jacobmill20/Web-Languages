@@ -1,0 +1,145 @@
+/* MOUSE INTERACTION SELECTORS Anything can have hove and active! */
+#box-hover {
+	width: 200px;
+	height: 50px;
+	background: red;
+}
+#box-hover:hover {
+	width: 400px;
+}
+#box-hover:active {
+	background: orange;
+}
+
+/* LINK STYLING Love hate order*/
+#linkstates a {
+	font-weight: bold;
+	font-size: 24px;
+}
+a.custom {
+	text-decoration: none;
+}
+a.custom:visited {
+	color: gray;
+}
+a.custom:hover {
+	color: red;
+}
+a.custom:active {
+	color: teal;
+}
+
+/* CHILD SELECTORS */
+article span {
+	font-size: 2em;
+	padding: 15px;
+	border-right: 2px dashed black;
+}
+article span:first-child {
+	color: red;
+}
+article span:last-child {
+	color: cyan;
+	border-width: 0;
+}
+article span:nth-child(odd) {
+	font-weight: bold;
+}
+article span:nth-child(2) {
+	color: green;
+}
+article span:nth-last-child(2) {
+	color: orange;
+}
+
+/* FIRST LETTER, LINE, TYPE SELECTORS Uses the double colon :: */
+#lifestory p::first-line {
+	color: red;
+}
+#lifestory p:first-child::first-letter {
+	color: steel;
+	font-size: 2.7em;
+	line-height: .75em;
+	padding-right: 3px;
+	float: left;
+}
+#lifestory {
+	max-width: 500px;
+}
+
+/* BEFORE AND AFTER - adding content */
+/* INFO FROM ATTRIBUTE AFTER */
+
+h2:before {
+	conent: "* ";
+	color: crimson;
+	font-weight: bold;
+}
+a:after {
+	content: " (" attr(href) ")";
+}
+
+/* BLOCKQUOTE STYLING */
+blockquote {
+	width: 200px;
+	color: teal;
+	font-style: italic;
+	font-size: 24px;
+	line-height: 1.5em;
+	quotes: "\201C""\201D""\20120""\2021";
+}
+blockquote:before {
+	content: open-quote" ";
+}
+blockquote:after {
+	content: " "close-quote;
+}
+blockquote:before, blockquote:after {
+	font-size: 1.5em;
+	color: black;
+	line-height: 1em;
+}
+
+/* SECRET SELECTION */
+#secret p::selection {
+	color: transparent;
+}
+#secret p span::selection {
+	color: red;
+	background: yellow;
+}
+#secret p:hover:after {
+	content: "(Select this paragraph to reveal the secret)";
+	font: bold italic 75% serif;
+	color: lightgrey;
+	margin-left: 25px;
+}
+
+/* Hexadecimal names (css code) for utf-8 character dingbats*/
+h3:after {
+	content: " \261c";
+	color: blue;
+	font-size: 200%;
+	line-ehight: 0;
+	verticla-align: -0.25em;
+}
+[id*=y]:after {
+	content: "\26c4 ?";
+	font-size: 100px;
+	color: red;
+}
+
+/* IMAGE AFTER ~= CONTAINS ^= BEGINS WITH $= ENDSWITH *= eVERY */
+[title~="mule"]:after {
+	content: url("http://www.grin3design.com/testimages/mobun-sm.png");
+	font-size 24px;
+	background-size: contain;
+}
+
+/* WITHOUT THE AFTER OR BEFORE CONTENT JUST REPLACES */
+#replace {
+	width: 150px;
+	height: 150px;
+	background: pink;
+	content: url(http://www.grin3design.com/testimages/ishcrim2.gif");
+}
